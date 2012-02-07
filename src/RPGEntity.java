@@ -22,6 +22,11 @@ public class RPGEntity {
 		this.hitpoints.increase(healAmt);
 	}
 	
+	//Entity Dies
+	public void die(){
+		//Logic. Now with more death.
+	}
+	
 	//Set statistic of entity.
 	public void setStat(Statistic stat, int changeAmt){
 		this.statistics[stat] += changeAmt;
