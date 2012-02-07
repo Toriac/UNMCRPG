@@ -33,6 +33,7 @@ public class RPGEntity {
 	}
 	
 	//Get Entity's current level.
+	//Do we want to abstract this or leave it simply as an atty?
 	public final int getLevel(){
 		return this.level;
 	}
