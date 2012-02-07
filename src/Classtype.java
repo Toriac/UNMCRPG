@@ -9,6 +9,11 @@ public class Classtype {
 		this.name = "";
 	}
 	
+	public void setLOL(){
+		return this.name;
+	
+	}
+	
 	/* Methods */
 	public String getName(){
 		return this.name;
