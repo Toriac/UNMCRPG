@@ -23,7 +23,7 @@ public class EnemyEntity extends RPGEntity {
 	
 	
 	public Item dropRandomItem(){
-		int randNum = Math.round(Math.random()) * drops.length;
+		int randNum = Math.round(Math.random() * drops.length);
 		return this.drops[randNum];
 	}
 	
