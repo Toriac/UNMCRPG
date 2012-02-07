@@ -4,10 +4,15 @@ import java.util.ArrayList;
 public class EnemyEntity extends RPGEntity {
 	/* Vars */
 	private String enemyType;
-	private ArrayList<Item> drops = new ArrayList<Item>();
+	private ArrayList<Item> drops;
 	
 	
 	/* Methods */
+	//Constructor
+	EnemyEntity(){
+		this.enemyType = "";
+		this.drops = new ArrayList<Item>();
+	}
 	//Do some ability.
 	public void doSpecialAbility(RPGEntity target){
 		//Logic for doing special ability.

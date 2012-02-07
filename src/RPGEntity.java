@@ -6,14 +6,28 @@ public class RPGEntity {
 	/* Vars */
 	private int entityID;
 	private int level;
-	private ArrayList<Buff> buffs = new ArrayList<Buff>();
-	private ArrayList<Debuff> debuffs = new ArrayList<Debuff>();
-	private HitPoints hitpoints = new Hitpoints;
-	private Resource resources = new Resource;
-	private ArrayList<Statistic> statistics = new ArrayList<Statistic>();
-	private ArrayList<Skill> abilities = new ArrayList<Skill>();
+	private ArrayList<Buff> buffs;
+	private ArrayList<Debuff> debuffs;
+	private HitPoints hitpoints;
+	private Resource resources;
+	private ArrayList<Statistic> statistics;
+	private ArrayList<Skill> abilities;
 	
 	/* Methods */
+	//Constructor
+	RPGEntity(){
+		// Will need a method to pull total & add in this id
+		// this.entityID =
+		this.level = 0;
+		this.buffs = new ArrayList<Buff>();
+		this.debuffs = new ArrayList<Buff>();
+		this.hitpoints = new HitPoints;
+		this.resources = new Resource;
+		this.statistics = new ArrayList<Statistic>();
+		this.abilities = new ArrayList<Skill>();
+		
+	}
+	
 	//Attack target entity.
 	public void attack(RPGEntity target){
 		//Logic containing attack information.
