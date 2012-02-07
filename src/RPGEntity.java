@@ -1,15 +1,17 @@
+import java.util.ArrayList;
+
 
 public class RPGEntity {
 
 	/* Vars */
 	private int entityID;
 	private int level;
-	private Buff[] buffs = new Buff[];
-	private Debuff[] debuffs = new Debuff[];
+	private ArrayList<Buff> buffs = new ArrayList<Buff>();
+	private ArrayList<Debuff> debuffs = new ArrayList<Debuff>();
 	private HitPoints hitpoints = new Hitpoints;
 	private Resource resources = new Resource;
-	private Statistic[] statistics = new Statistic[];
-	private Skill[] abilities = new Skill[];
+	private ArrayList<Statistic> statistics = new ArrayList<Statistic>();
+	private ArrayList<Skill> abilities = new ArrayList<Skill>();
 	
 	/* Methods */
 	//Attack target entity.

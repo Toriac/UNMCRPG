@@ -1,10 +1,13 @@
+import java.util.ArrayList;
+
 
 public class EnemyEntity extends RPGEntity {
 	/* Vars */
 	private String enemyType;
-	private Item[] drops = new Item[];
+	private ArrayList<Item> drops = new ArrayList<Item>();
 	
-	/* Vars */
+	
+	/* Methods */
 	//Do some ability.
 	public void doSpecialAbility(RPGEntity target){
 		//Logic for doing special ability.
@@ -13,7 +16,7 @@ public class EnemyEntity extends RPGEntity {
 	//Drop item based on ID
 	public Item dropItem(int dropID){
 		//Serialized goodness
-		if(this.drops[dropID] != null){
+		if(this.drops[dropID] != null ){
 			return this.drops[dropID];
 		}
 		else{
@@ -21,7 +24,7 @@ public class EnemyEntity extends RPGEntity {
 		}
 	}
 	
-	
+	//Drop a random item. Partyhard.js.
 	public Item dropRandomItem(){
 		int randNum = Math.round(Math.random() * drops.length);
 		return this.drops[randNum];
