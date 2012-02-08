@@ -2,7 +2,7 @@
  // TODO: Everything. Namely, stats being imported and exported from save to load.
 
 
-public class Ranger {
+public class Ranger extends PlayerEntity {
 	
 	// Ye Olde Redneck. 
 	

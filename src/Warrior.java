@@ -1,7 +1,7 @@
 
  // TODO: Everything. Namely, stats being imported and exported from save to load.
 
-public class Warrior {
+public class Warrior extends PlayerEntity {
       
 	// It's like playing a class that takes skill and then removing the skill part.
 	

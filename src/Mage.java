@@ -4,7 +4,7 @@
 
 	
 
-public class Mage {
+public class Mage extends PlayerEntity {
 	
 	// You somehow found a way to shoot lightning from your fingers and still can't kill a rat.
 	
